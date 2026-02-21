@@ -45,3 +45,28 @@ def check_outliers(df, column):
         plt.show()
     else:
         print(f"Skipping {column}: Outlier detection is for numerical data only.")
+        
+def plot_comparison_kde(df, feature, target_col='diabetes_risk_category'):
+    """
+    Plots multiple KDE curves on the same graph to compare feature 
+    distributions across different target categories.
+    """
+    plt.figure(figsize=(10, 6))
+    
+    # common_norm=False allows us to compare the shape/spread 
+    # even if one category has way fewer people than the other.
+    sns.kdeplot(
+        data=df, 
+        x=feature, 
+        hue=target_col, 
+        fill=True, 
+        common_norm=False, 
+        palette='magma', 
+        alpha=0.4
+    )
+    
+    plt.title(f'Comparison of {feature} by {target_col}', fontsize=15)
+    plt.xlabel(feature, fontsize=12)
+    plt.ylabel('Density', fontsize=12)
+    plt.grid(axis='y', linestyle='--', alpha=0.3)
+    plt.show()
