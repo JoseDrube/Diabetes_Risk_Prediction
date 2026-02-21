@@ -2,6 +2,9 @@
 # These functions will be used to inspect the data and the model
 # The next functions are analytical functions:
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 def get_data_summary(df):
     """Prints a professional summary of the dataset's health."""
     print("--- DATASET SUMMARY ---")
