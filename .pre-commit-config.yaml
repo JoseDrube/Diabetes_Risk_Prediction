@@ -1,0 +1,10 @@
+# See https://pre-commit.com for more
+repos:
+  - repo: local
+    hooks:
+      - id: normalize-notebooks
+        name: Normalize Jupyter notebook outputs (nbformat)
+        entry: python scripts/normalize_notebooks.py
+        language: system
+        files: \.ipynb$
+        pass_filenames: true
