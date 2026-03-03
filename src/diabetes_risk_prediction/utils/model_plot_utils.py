@@ -123,12 +123,3 @@ def plot_multimodel_roc(models_dict, X_test, y_test):
     plt.legend(loc="lower right")
     plt.grid(alpha=0.3)
     plt.show()
-
-# --- Example Usage ---
-# models = {
-#     'Random Forest': rf_model,
-#     'RF GSCV': rf_grid_search.best_estimator_,
-#     'XGBoost': xgb_model,
-#     'XGB GSCV': xgb_grid_search.best_estimator_
-# }
-# plot_multimodel_roc(models, X_test, y_test)

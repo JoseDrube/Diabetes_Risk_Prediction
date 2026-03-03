@@ -1,6 +1,4 @@
-# Here we will store the functions for the EDA
-# These functions will be used to inspect the data and the model
-# The next functions are analytical functions:
+# Here we will store the functions
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -144,3 +142,5 @@ def plot_multiple_comparison_kde(df, features, target_col='diabetes_risk_categor
 
     plt.tight_layout()
     plt.show()
+    
+    
