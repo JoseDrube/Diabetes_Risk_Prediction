@@ -53,7 +53,7 @@ cd Diabetes_Risk_Prediction
     streamlit run app.py
 
 💡 Key Insights
-Top Predictors: Clinical markers such as HbA1c levels, BMI, and Fasting Glucose were identified as the strongest drivers of risk within the model coefficients.
+Top Predictors: Clinical markers such as BMI and Fasting Glucose were identified as the strongest drivers of risk within the model coefficients.
 
 Operational Efficiency: The Logistic Regression model achieved near-instantaneous inference (<1ms), making it highly suitable for real-time edge deployment or mobile integration.
 
